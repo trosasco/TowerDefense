@@ -1,0 +1,217 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.2f1 (068178b99f32) revision 426360'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.867; Version 2009; 64bit' Language: 'en' Physical Memory: 16332 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/June/Documents/CSUMB/CST326 - Game Dev/TowerDefense
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50833
+Successfully changed project path to: C:/Users/June/Documents/CSUMB/CST326 - Game Dev/TowerDefense
+C:/Users/June/Documents/CSUMB/CST326 - Game Dev/TowerDefense
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 22.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.2f1 (068178b99f32)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/June/Documents/CSUMB/CST326 - Game Dev/TowerDefense/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 5700 XT (ID=0x731f)
+    Vendor:   
+    VRAM:     8152 MB
+    Driver:   27.20.14501.18003
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002045 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 22.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.214 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000997 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.861 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1102 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 56.6 MB.
+System memory in use after: 56.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1543.
+Total: 1.961900 ms (FindLiveObjects: 0.138500 ms CreateObjectMapping: 0.028700 ms MarkObjects: 1.711500 ms  DeleteObjects: 0.081500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Tower Defense/Material/Clay.mat
+  artifactKey: Guid(ef78417f6e76a0840a16fdf83c6619cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Material/Clay.mat using Guid(ef78417f6e76a0840a16fdf83c6619cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccfc18801c7f35f9b19c134d6d762777') in 0.376091 seconds
+  Import took 0.378576 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Tower Defense/Material/Michael.mat
+  artifactKey: Guid(adccf28938fe83d49a423b0478b027be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Material/Michael.mat using Guid(adccf28938fe83d49a423b0478b027be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccb1f9d1ca412f67e6e59f491a254677') in 0.023723 seconds
+  Import took 0.025693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.831033 seconds.
+  path: Assets/Tower Defense/Prefab/BigBadGuy.prefab
+  artifactKey: Guid(8e9ae34d3087e254ba136ebc1837315c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Prefab/BigBadGuy.prefab using Guid(8e9ae34d3087e254ba136ebc1837315c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2449f421ede137008fbbed8289ef50b3') in 0.035748 seconds
+  Import took 0.037969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Tower Defense/Prefab/Waypoint.prefab
+  artifactKey: Guid(399528b50e6f6da438c771317281e383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Prefab/Waypoint.prefab using Guid(399528b50e6f6da438c771317281e383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca1fb1b52257a7f52cad8fab32eb60f') in 0.011191 seconds
+  Import took 0.013845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000457 seconds.
+  path: Assets/Tower Defense/Prefab/SmallBadGuy.prefab
+  artifactKey: Guid(930fa4151fffb3d488d1d0b00b4691ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Prefab/SmallBadGuy.prefab using Guid(930fa4151fffb3d488d1d0b00b4691ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f17ddcc0d6ff29e61e50343d5fab3b00') in 0.019114 seconds
+  Import took 0.021706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.828905 seconds.
+  path: Assets/Tower Defense/Textures/Map1.jpg
+  artifactKey: Guid(c78af84f06463cb4f8c7533f4096ed4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Textures/Map1.jpg using Guid(c78af84f06463cb4f8c7533f4096ed4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25fae7f54f55edd562beed28f95efd9a') in 0.034996 seconds
+  Import took 0.036978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.054188 seconds.
+  path: Assets/Tower Defense/Scenes/TowerDefense.unity
+  artifactKey: Guid(edb0c31d984fe424dab2e3ac58e37bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Scenes/TowerDefense.unity using Guid(edb0c31d984fe424dab2e3ac58e37bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b32a73947ee232b82195ac2c75546c3') in 0.007304 seconds
+  Import took 0.009224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Tower Defense/Scenes/TowerDefense.unity
+  artifactKey: Guid(edb0c31d984fe424dab2e3ac58e37bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Scenes/TowerDefense.unity using Guid(edb0c31d984fe424dab2e3ac58e37bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b32a73947ee232b82195ac2c75546c3') in 0.003468 seconds
+  Import took 0.005796 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000680 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.864 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1097 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.0 MB.
+System memory in use after: 60.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1588.
+Total: 2.398500 ms (FindLiveObjects: 0.202600 ms CreateObjectMapping: 0.030600 ms MarkObjects: 2.106600 ms  DeleteObjects: 0.057400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.005407 seconds.
+  path: Assets/Tower Defense/Scripts/Waypoint.cs
+  artifactKey: Guid(d74af3c33b706ae4aa0316b149bea501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Scripts/Waypoint.cs using Guid(d74af3c33b706ae4aa0316b149bea501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33105c1eb41e0a511118dd4c479ab264') in 0.006121 seconds
+  Import took 0.007903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.191034 seconds.
+  path: Assets/Tower Defense/Scripts/Path.cs
+  artifactKey: Guid(8d92b59fb96d9ea49ba817375909cc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Scripts/Path.cs using Guid(8d92b59fb96d9ea49ba817375909cc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e252db9583217110824ed9df243761bb') in 0.006950 seconds
+  Import took 0.010104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003473 seconds.
+  path: Assets/Tower Defense/Scripts/Path.cs
+  artifactKey: Guid(8d92b59fb96d9ea49ba817375909cc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Scripts/Path.cs using Guid(8d92b59fb96d9ea49ba817375909cc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e252db9583217110824ed9df243761bb') in 0.002998 seconds
+  Import took 0.004681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.129591 seconds.
+  path: Assets/Tower Defense/Scripts/Enemy.cs
+  artifactKey: Guid(1fb58393863db114098f8a5c69c351e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Scripts/Enemy.cs using Guid(1fb58393863db114098f8a5c69c351e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '755a85c74c89c7b6bfb53bd26480eb5d') in 0.007073 seconds
+  Import took 0.009645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12645.647209 seconds.
+  path: Assets/Tower Defense/Textures/tdmap.png
+  artifactKey: Guid(032843b17242a4942a16e89f6707c1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Textures/tdmap.png using Guid(032843b17242a4942a16e89f6707c1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a0b92e702869800b52631dec84ccae') in 0.105886 seconds
+  Import took 0.110623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.618662 seconds.
+  path: Assets/Tower Defense/Textures/tdmap.png
+  artifactKey: Guid(032843b17242a4942a16e89f6707c1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Textures/tdmap.png using Guid(032843b17242a4942a16e89f6707c1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a27333a939d8732f368084fc6780e2c5') in 0.007945 seconds
+  Import took 0.010076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.749320 seconds.
+  path: Assets/Tower Defense/Textures/tdmap.png
+  artifactKey: Guid(032843b17242a4942a16e89f6707c1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tower Defense/Textures/tdmap.png using Guid(032843b17242a4942a16e89f6707c1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83c9c2743f00d81e0ad4cb26b4c27f67') in 0.033194 seconds
+  Import took 0.035215 seconds .
+
