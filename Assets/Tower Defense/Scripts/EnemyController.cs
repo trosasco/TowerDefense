@@ -14,7 +14,6 @@ public class EnemyController : MonoBehaviour
   private Vector3 nextWaypoint;
   private bool stop = false;
 
-
   void Awake()
   {
     road = route.path;
@@ -47,7 +46,7 @@ public class EnemyController : MonoBehaviour
       if (Physics.Raycast(ray, out hit, 5000.0f))
       {
         
-        if (hit.transform.CompareTag("BigEnemy"))
+        if (hit.transform == transform)
         {
           //Decrement health of enemy
           if (health > 2)
@@ -57,21 +56,7 @@ public class EnemyController : MonoBehaviour
           else
           {
             //Add coins to purse
-            pc.updateCoins(10);
-            //Destroy enemy if health is 2 or less
-            Destroy(hit.transform.gameObject);
-          }
-        } else if (hit.transform.CompareTag("SmallEnemy"))
-        {
-          //Decrement health of enemy
-          if (health > 2)
-          {
-            decrementEnemyHealth();
-          }
-          else
-          {
-            //Add coins to purse
-            pc.updateCoins(5);
+            addCoins();
             //Destroy enemy if health is 2 or less
             Destroy(hit.transform.gameObject);
           }
@@ -98,6 +83,16 @@ public class EnemyController : MonoBehaviour
   {
     health -= 2;
   }
-  
+
+  void addCoins()
+  {
+    if (this.CompareTag("SmallEnemy"))
+    {
+      pc.updateCoins(5);
+    } else if (this.CompareTag("BigEnemy"))
+    {
+      pc.updateCoins(10);
+    }
+  }
   
 }
