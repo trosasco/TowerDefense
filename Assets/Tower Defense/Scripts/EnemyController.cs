@@ -8,14 +8,17 @@ public class EnemyController : MonoBehaviour
   public float health;
   public float speed = .25f; 
   public PurseController pc;
+  public GameObject healthBar;
   
   private Waypoint[] road;
   private int index = 0;
   private Vector3 nextWaypoint;
   private bool stop = false;
+  private float startingHealth;
 
   void Awake()
   {
+    startingHealth = health;
     road = route.path;
     transform.position = road[index].transform.position;
     Recalculate();
@@ -82,6 +85,10 @@ public class EnemyController : MonoBehaviour
   void decrementEnemyHealth()
   {
     health -= 2;
+
+    float ratio = 1 / startingHealth; 
+        
+    healthBar.transform.localScale = new Vector3( health * ratio,0.25f,1);
   }
 
   void addCoins()
