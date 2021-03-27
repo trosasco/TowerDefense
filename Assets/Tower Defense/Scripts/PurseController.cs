@@ -21,6 +21,11 @@ public class PurseController : MonoBehaviour
         
     }
 
+    public int getCoins()
+    {
+        return coinNumber;
+    }
+
     public void updateCoins(int x)
     {
         string zeros = "";
