@@ -37,10 +37,6 @@ public class TowerController : MonoBehaviour
                 pc.updateCoins(-cost);
                 tower.SetActive(built);   
             }
-            else
-            {
-                Debug.Log("Not enough scarabs.");
-            }
         }  
     }
 
