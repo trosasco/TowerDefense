@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Random = UnityEngine.Random;
 
 public class TowerController : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class TowerController : MonoBehaviour
     public GameObject tower;
     public int cost = 10;
     public PurseController pc;
-
+    private List<GameObject> attackQueue;
     private bool entered;
     
     // Start is called before the first frame update
@@ -50,4 +51,13 @@ public class TowerController : MonoBehaviour
     {
         entered = false;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("SmallEnemy") || other.CompareTag("BigEnemy"))
+        {
+            attackQueue.Add(other.gameObject);
+        }
+    }
+
 }

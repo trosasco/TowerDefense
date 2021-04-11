@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2029297817726421893}
   - component: {fileID: 2029297817726421892}
   - component: {fileID: 7613509990886279758}
+  - component: {fileID: -5179296796618145881}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -112,6 +113,20 @@ MonoBehaviour:
   built: 0
   tower: {fileID: 2029297818246371122}
   cost: 10
+  pc: {fileID: 0}
+--- !u!135 &-5179296796618145881
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029297817726421946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2029297818246371122
 GameObject:
   m_ObjectHideFlags: 0

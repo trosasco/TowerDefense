@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Tower Defense/Scenes/RestartScene.unity
+    guid: c9b8282f4525942479223346daa8998e
+  - enabled: 1
+    path: Assets/Tower Defense/Scenes/StartMenu.unity
+    guid: 71952eb077c5e2744a69df4af937fe17
+  - enabled: 1
+    path: Assets/Tower Defense/Scenes/TowerDefense.unity
+    guid: edb0c31d984fe424dab2e3ac58e37bdf
   m_configObjects: {}
