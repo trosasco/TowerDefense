@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour
 {
@@ -15,6 +17,12 @@ public class EnemyController : MonoBehaviour
   private Vector3 nextWaypoint;
   private bool stop = false;
   private float startingHealth;
+
+  private bool shot;
+  public int dmg;
+  public float attackRate;
+  public GameObject bullet;
+  private TowerController aim;
 
   void Awake()
   {
@@ -68,6 +76,15 @@ public class EnemyController : MonoBehaviour
     }
 
   }
+  
+  void FixedUpdate()
+  {
+    if (shot && Time.time > attackRate)
+    {
+      attackRate = Time.time + Random.Range(1, 5);
+      StartCoroutine(shootTower());
+    }
+  }
 
   void Recalculate()
   {
@@ -102,4 +119,18 @@ public class EnemyController : MonoBehaviour
     }
   }
   
+  IEnumerator shootTower()
+  {
+    yield return new WaitForSeconds(Random.Range(3f, 15f));
+    aim.decrementTowerHealth(-dmg);
+    shot = false;
+  }
+
+  private void OnTriggerEnter(Collider other)
+  {
+    if (other.CompareTag("Tower"))
+    {
+      aim = other.GetComponent<TowerController>();
+    }
+  }
 }

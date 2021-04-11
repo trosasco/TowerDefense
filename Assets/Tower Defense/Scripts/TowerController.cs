@@ -13,6 +13,8 @@ public class TowerController : MonoBehaviour
     public PurseController pc;
     private List<GameObject> attackQueue;
     private bool entered;
+
+    public float health = 20;
     
     // Start is called before the first frame update
     void Start()
@@ -58,6 +60,11 @@ public class TowerController : MonoBehaviour
         {
             attackQueue.Add(other.gameObject);
         }
+    }
+
+    public void decrementTowerHealth(int amount)
+    {
+        health += amount;
     }
 
 }
