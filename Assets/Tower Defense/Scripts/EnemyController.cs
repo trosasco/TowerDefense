@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour
@@ -24,6 +25,8 @@ public class EnemyController : MonoBehaviour
   public GameObject bullet;
   private TowerController aim;
 
+  public GameObject explosion;
+
   void Awake()
   {
     startingHealth = health;
@@ -39,6 +42,11 @@ public class EnemyController : MonoBehaviour
     {
       if ((transform.position - road[index + 1].transform.position).magnitude < .1f)
       {
+        //When enemy reaches last waypoint
+        if (index == road.Length-2)
+        {
+          SceneManager.LoadScene("RestartScene");
+        }
         index = index + 1;
         Recalculate();
       }
@@ -68,6 +76,8 @@ public class EnemyController : MonoBehaviour
           {
             //Add coins to purse
             addCoins();
+            //Start particle effect
+            Instantiate(explosion, transform.position, transform.rotation);
             //Destroy enemy if health is 2 or less
             Destroy(hit.transform.gameObject);
           }
@@ -79,10 +89,15 @@ public class EnemyController : MonoBehaviour
   
   void FixedUpdate()
   {
-    if (shot && Time.time > attackRate)
+    if (aim != null)
     {
-      attackRate = Time.time + Random.Range(1, 5);
-      StartCoroutine(shootTower());
+      //Stops enemy if they see a built tower
+      stop = aim.built;
+      if (!shot)
+      {
+        shot = true;
+        StartCoroutine(shootTower());
+      }
     }
   }
 
@@ -118,19 +133,29 @@ public class EnemyController : MonoBehaviour
       pc.updateCoins(10);
     }
   }
-  
-  IEnumerator shootTower()
+ IEnumerator shootTower()
   {
-    yield return new WaitForSeconds(Random.Range(3f, 15f));
-    aim.decrementTowerHealth(-dmg);
-    shot = false;
+    if (aim.built)
+    {
+      aim.updateHealth(-dmg);
+      yield return new WaitForSeconds(attackRate);
+      shot = false;
+    }
   }
-
   private void OnTriggerEnter(Collider other)
   {
     if (other.CompareTag("Tower"))
     {
       aim = other.GetComponent<TowerController>();
     }
+  }
+
+  private void OnTriggerExit(Collider other)
+  {
+    if (other.CompareTag("Tower"))
+    {
+      aim = null;
+    }
+    
   }
 }

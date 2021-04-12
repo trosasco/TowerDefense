@@ -13,12 +13,16 @@ public class TowerController : MonoBehaviour
     public PurseController pc;
     private List<GameObject> attackQueue;
     private bool entered;
+    public GameObject healthBar;
 
     public float health = 20;
+    private float startingHealth;
     
     // Start is called before the first frame update
     void Start()
     {
+        startingHealth = health;
+        attackQueue = new List<GameObject>();
         tower.SetActive(built);
         
         //Destroys self if there is no purse
@@ -58,13 +62,35 @@ public class TowerController : MonoBehaviour
     {
         if (other.CompareTag("SmallEnemy") || other.CompareTag("BigEnemy"))
         {
-            attackQueue.Add(other.gameObject);
+            if (built)
+            {
+                attackQueue.Add(other.gameObject);
+            }
         }
     }
 
-    public void decrementTowerHealth(int amount)
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("SmallEnemy") || other.CompareTag("BigEnemy"))
+        {
+        }
+        
+    }
+
+    public void updateHealth(int amount)
     {
         health += amount;
+        
+        //If the tower is destroyed
+        if (health < 0)
+        {
+            built = false;
+            health = startingHealth;
+            tower.SetActive(built);
+        }
+        
+        float ratio = 1 / startingHealth;
+        healthBar.transform.localScale = new Vector3( health * ratio,0.25f,1);
     }
 
 }

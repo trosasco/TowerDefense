@@ -8,6 +8,7 @@ TagManager:
   - BigEnemy
   - SmallEnemy
   - Bullet
+  - Tower
   layers:
   - Default
   - TransparentFX
